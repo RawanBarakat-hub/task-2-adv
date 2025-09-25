@@ -1,0 +1,11 @@
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+@media screen and (max-width:992px) {
+    .about_container{
+        flex-direction: column;
+    }
+}

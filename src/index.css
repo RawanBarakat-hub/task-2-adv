@@ -1,0 +1,99 @@
+:root{
+  --background-color-primary: #FFF5F0;
+  --background-color-light: #FFFFFF;
+  --primary-color: #FFDECC;
+  --secondary-color: #FFEFE5;
+  --accent-color: #FFAE80;
+  --rarely-color: #FF8D4D;
+  --color-shift: #262626;
+  --color-shift-secondary: #1A1A1A;
+  --color-shift-rarely: #333333;
+  --color-shadow: #FFBE99;
+  --color-shadow-secondary: #1E1E1E;
+  --border-color: #000000;
+  --paragraph-color: #4C4C4D;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section_margin{
+  margin: 200px 0;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border_item{
+  border: 2px solid var(--color-shift);
+}
+._flex{
+  display: flex;
+}
+._justify_between{
+  justify-content: space-between;
+}
+._align_center{
+  align-items: center;
+}
+._list_none{
+  list-style: none;
+}
+.we{
+  transform: translateX(-100%);
+}
+._radius6{
+  border-radius: 6px;
+}
+._radius8{
+  border-radius: 8px;
+}
+.radius12{
+  border-radius: 12px;
+}
+._text_center{
+  text-align: center;
+}
+@font-face {
+  font-family: "outfit5";
+  src: url("/assets/fonts/Outfit/static/Outfit-Medium.ttf");
+}
+@font-face {
+  font-family: "outfit6";
+  src: url("/assets/fonts/Outfit/static/Outfit-SemiBold.ttf");
+}
+@font-face {
+  font-family: "outfit8";
+  src: url("/assets/fonts/Outfit/static/Outfit-Bold.ttf");
+}
+@font-face {
+  font-family: "raleway7";
+  src: url("/assets/fonts/Raleway/static/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "raleway8";
+  src: url("/assets/fonts/Raleway/static/Raleway-ExtraBold.ttf");
+}
+body{
+  background-color: var(--background-color-primary);
+}
+.white_spacing{
+  padding-left: 51px;
+  padding-right: 51px;
+}
+@media screen and (max-width:1440px) {
+  .section_margin{
+    margin: 150px 0;
+  }
+}
+@media screen and (max-width:992px) {
+  .white_spacing{
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .section_margin{
+    margin: 220px 0;
+  }
+}

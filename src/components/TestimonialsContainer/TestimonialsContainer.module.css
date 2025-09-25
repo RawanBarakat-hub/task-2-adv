@@ -1,0 +1,45 @@
+.container{
+    overflow-x: hidden;
+    position: relative;
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    transition: 1s all;
+    padding: 0 40px;
+}
+.arrows{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    height: 40px;
+    z-index: 3;
+}
+.arrows button{
+    width: 58px;
+    height: 58px;
+    background-color: var(--background-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-shift-rarely);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1440px) {
+    .container{
+        gap: 40px;
+    }
+}
+@media screen and (max-width:992px) {
+    .arrows{
+        top: 100%;
+        transform: translateY(-50%);
+        justify-content: center;    }
+}

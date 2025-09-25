@@ -1,0 +1,24 @@
+.card_hero h1{
+    color: var(--color-shift);
+    font-family: "outfit8";
+    font-size: 44px;
+}
+.card_hero p{
+    color: var(--color-shift);
+    font-family: "outfit5";
+    font-size: 18px;
+}
+@media screen and (max-width:1440px) {
+    .card_hero h1{
+        font-size: 34px;
+    }
+    .card_hero p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:992px) {
+    .card_hero{
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--color-shift);
+    }
+}

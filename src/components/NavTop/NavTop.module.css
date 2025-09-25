@@ -1,0 +1,76 @@
+.nav_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 14px 0;
+  background-color: var(--primary-color);
+  border: 2px solid var(--color-shift);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.info p {
+    font-family: "outfit5";
+    font-size: 20px;
+  }
+.first,
+.two,
+.three,
+.four {
+  position: absolute;
+}
+.first {
+  left: 0;
+}
+.two {
+  top: 0;
+  left: 306.33px;
+}
+.three {
+  right: 0;
+}
+.four {
+  bottom: -14px;
+  right: 340.72px;
+}
+@media screen and (max-width: 1440px) {
+  .nav_top {
+    padding: 12px 0;
+  }
+  .info p {
+      font-size: 16px;
+    }
+  .first,
+  .three {
+    width: 180px;
+  }
+  .two {
+    left: 121.32px;
+  }
+  .four {
+    right: 148.22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .info {
+    gap: 10px;
+  }
+  .info p {
+      font-size: 14px;
+    }
+  .first,
+  .three {
+    width: 50px;
+  }
+  .two {
+    left: 4px;
+  }
+  .four {
+    right: -14px;
+  }
+}

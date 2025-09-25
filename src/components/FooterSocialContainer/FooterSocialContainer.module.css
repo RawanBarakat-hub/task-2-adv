@@ -1,0 +1,8 @@
+._gap{
+    gap: 14px;
+}
+@media screen and (max-width:992px) {
+    ._gap{
+        gap: 10px;
+    }
+}

@@ -1,0 +1,22 @@
+.container_hero{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: 2px solid var(--color-shift);
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px 1px var(--color-shadow);
+}
+@media screen and (max-width:1440px) {
+    .container_hero{
+        box-shadow: 6px 6px 0px 1px var(--color-shadow);
+
+    }
+}
+@media screen and (max-width:992px) {
+    .container_hero{
+        flex-direction: column;
+        box-shadow: 4px 4px 0px 1px var(--color-shadow);
+
+    }
+}
