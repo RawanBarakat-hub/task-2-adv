@@ -1,0 +1,12 @@
+.container_two{
+    display: grid;
+    grid-template-columns: repeat(2 , minmax( 200px , 768px));
+    justify-content: space-between;
+    gap: 30px;
+}
+@media screen and (max-width:992px) {
+    .container_two{
+        grid-template-columns: repeat(1 , minmax( 200px , 768px));
+        justify-content: center;
+    }
+}

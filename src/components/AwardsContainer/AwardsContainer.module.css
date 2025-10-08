@@ -1,0 +1,17 @@
+.slider {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.window {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.container_three {
+    display: flex;
+    gap: 2vw;
+    transition: transform 0.8s ease-in-out;
+}
+
+

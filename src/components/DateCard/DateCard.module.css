@@ -1,0 +1,80 @@
+.square{
+    padding: 30.34px 50px;
+    gap: 20px;
+    max-width: 364.309px;
+    position: relative;
+}
+.square::before,
+.square::after{
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--color-shift);
+    border-radius: 50%;
+    background-color: var(--background-color-light);
+}
+.square::before{
+    left: -1px;
+    z-index: 3;
+}
+.square::after{
+    left: -57px;
+}
+.square div div{
+    width: max-content;
+    height: 30px;
+}
+.square .image{
+    width: max-content;
+    margin-bottom: 0;
+}
+.one{
+    position: relative;
+}
+.two{
+    position: absolute;
+    transform: translateX(-100%);
+    z-index: 2;
+}
+.date{
+    font-size: 68px ;
+}
+.line{
+    position: absolute;
+    z-index: 2;
+    transform: translateX(-100%);
+    left: -9px;
+    width: 41px;
+    padding: 6px 0;
+    background-color: var(--color-shadow);
+}
+.line_black{
+    display: block;
+    width: 34px;
+    height: 2px;
+    background-color: var(--border-color);
+}
+@media  screen and (max-width:1440px) {
+    .square{
+        padding: 25px 34px;
+    }
+    .date{
+        font-size: 48px;
+    }
+}
+@media  screen and (max-width:992px) {
+    .square{
+        padding: 20px 24px;
+    }
+    .date{
+        font-size: 38px;
+    }
+    .line{
+        width: 20px;
+    }
+    .square::after{
+        left: -37px;
+    }
+}

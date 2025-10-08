@@ -1,0 +1,19 @@
+.info{
+    background-color: var(--background-color-light);
+    padding: 10px 20px;
+    font-family: "outfit5";
+    font-size: 18px;
+    color: var(--color-shift-rarely);
+    width: fit-content;
+}
+@media screen and (max-width:1440px) {
+    .info{
+        padding: 8px 14px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:992px) {
+    .info{
+        margin: 0 auto;
+    }
+}

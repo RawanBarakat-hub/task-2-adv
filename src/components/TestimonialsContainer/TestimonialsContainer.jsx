@@ -1,29 +1,65 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./TestimonialsContainer.module.css";
 
 const TestimonialsContainer = ({ children }) => {
-  const items = (Array.isArray(children) ? children : [children]).filter(Boolean);
-  const perView = typeof window !== "undefined" && window.innerWidth <= 992 ? 1 : 3;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef(null);
+  const total = children.length;
+  const [visibleCount, setVisibleCount] = useState(3);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 992) setVisibleCount(1);
+      else setVisibleCount(3);
+    };
 
-  const [index, setIndex] = useState(0);
-  const maxIndex = Math.max(0, items.length - perView);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  const nextSlide = () => {
+    setCurrentIndex((prev) =>
+      prev >= total - visibleCount ? 0 : prev + 1
+    );
+  };
 
-  const next = () => setIndex(i => (i >= maxIndex ? 0 : i + 1));
-  const prev = () => setIndex(i => (i === 0 ? maxIndex : i - 1));
+  const prevSlide = () => {
+    setCurrentIndex((prev) =>
+      prev <= 0 ? total - visibleCount : prev - 1
+    );
+  };
+  useEffect(() => {
+    if (!sliderRef.current || total === 0) return;
 
-  const offsetPercent = (index * 100) / perView;
+    const updateSlidePosition = () => {
+      const cards = sliderRef.current.children;
+      if (cards.length < 2) return;
 
+      const firstRect = cards[0].getBoundingClientRect();
+      const secondRect = cards[1].getBoundingClientRect();
+      const cardWidth = secondRect.left - firstRect.left;
+
+      const maxIndex = total - visibleCount;
+      const safeIndex = Math.min(currentIndex, Math.max(maxIndex, 0));
+      const moveX = safeIndex * cardWidth;
+      sliderRef.current.style.transform = `translateX(-${moveX}px)`;
+    };
+
+  updateSlidePosition();
+  window.addEventListener("resize", updateSlidePosition);
+  return () => window.removeEventListener("resize", updateSlidePosition);
+}, [currentIndex, total, visibleCount]);
   return (
-    <div className={styles.container} style={{ ["--perView"]: perView }}>
-      <div className={styles.slider} style={{ transform: `translateX(-${offsetPercent}%)` }}>
-        {items}
+    <div className={styles.container}>
+      <div className={styles.sliderWrapper}>
+        <div className={styles.slider} ref={sliderRef}>
+          {children}
+        </div>
       </div>
-
       <div className={styles.arrows}>
-        <button onClick={next}>
+        <button onClick={nextSlide}>
           <img src="/assets/img/icons/arrow-left.svg" alt="arrow-left" />
         </button>
-        <button onClick={prev}>
+        <button onClick={prevSlide}>
           <img src="/assets/img/icons/arrow-right.svg" alt="arrow-right" />
         </button>
       </div>

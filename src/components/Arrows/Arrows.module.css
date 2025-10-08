@@ -1,0 +1,57 @@
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.arrows button{
+    width: 58px;
+    height: 58px;
+    background-color: var(--background-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-shift-rarely);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.title{
+    font-size: 40px;
+    font-family: "raleway7";
+    color: var( --color-shift-secondary);
+    margin-bottom: 40px;
+}
+.description{
+    font-size: 22px;
+    font-family: "outfit5";
+    color: var(--paragraph-color);
+    line-height: 1.5
+}
+@media screen and (max-width:1440px) {
+    .arrows{
+        gap: 16px;
+    }
+    .title{
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+    .description{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:992px) {
+    .title{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .description{
+        font-size: 16px;
+    }
+    .gallery{
+        flex-direction: column-reverse;
+        text-align: center;
+        .arrows{
+            justify-content: center;
+        }
+    }
+}

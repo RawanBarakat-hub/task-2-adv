@@ -2,7 +2,8 @@
     padding-top: 18px;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: calc(100% - 102px);
+/*     width: 100%; */
     z-index: 10;
 }
 .nav_bottom{
@@ -37,7 +38,7 @@
     flex-shrink: 0;
 }
 .nav_bottom .list_nav li:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
 }
 .nav_bottom .list_nav a{
     text-decoration: none;
@@ -75,6 +76,9 @@
     text-decoration: none;
     color: var(--color-shift);
 }
+.active{
+    background-color: var(--secondary-color);
+}
 .nav_items.show{
     transform: translateX(100%);
     right: 220px;
@@ -101,6 +105,7 @@
 @media screen and (max-width:992px) {
     .nav{
         padding-top: 40px;
+        width: calc(100% - 34px);
     }
     .nav_bottom{
         height: 62px;

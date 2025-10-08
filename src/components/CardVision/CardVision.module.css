@@ -1,0 +1,25 @@
+.card{
+    padding: 60px;
+}
+.title_container{
+    margin-bottom: 60px;
+}
+@media screen and (max-width:1440px) {
+    .card{
+        padding: 60px;
+    }
+    .title_container{
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:992px) {
+    .card{
+        padding: 45.5px;
+    }
+    .title_container{
+        margin-bottom: 45.5px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}

@@ -1,45 +1,67 @@
-.container{
-    overflow-x: hidden;
-    position: relative;
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.slider{
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
-    transition: 1s all;
-    padding: 0 40px;
+.sliderWrapper {
+  overflow: hidden;
+/*   width: 88%; */
+  margin: 0 auto;
+  padding: 40px 0;
+ /*  width: fit-content; */
+  width: calc(22.94*3vw + 6vw);
+
 }
-.arrows{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    height: 40px;
-    z-index: 3;
+.slider {
+  display: flex;
+  gap: 3vw; 
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+  /* justify-content: center; */
+  width: calc(22.94*3vw + 6vw);
+  margin: 0 auto;
 }
-.arrows button{
-    width: 58px;
-    height: 58px;
-    background-color: var(--background-color-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--color-shift-rarely);
-    border-radius: 8px;
-    cursor: pointer;
+.arrows {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+/*   padding: 0 6%; */
 }
 
-@media screen and (max-width:1440px) {
-    .container{
-        gap: 40px;
-    }
+.arrows button {
+  width: 48px;
+  height: 48px;
+  background-color: var(--background-color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-shift-rarely);
+  border-radius: 8px;
+  cursor: pointer;
 }
-@media screen and (max-width:992px) {
-    .arrows{
-        top: 100%;
-        transform: translateY(-50%);
-        justify-content: center;    }
+
+/* موبايل */
+@media screen and (max-width: 992px) {
+  .slider {
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .arrows {
+    top: 100%;
+    transform: translateY(-50%);
+    justify-content: center;
+    gap: 16px;
+  }
 }

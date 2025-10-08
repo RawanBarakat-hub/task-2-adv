@@ -1,5 +1,6 @@
 import TestimonialCard from "../TestimonialCard/TestimonialCard"
 import TestimonialsContainer from "../TestimonialsContainer/TestimonialsContainer"
+
 import TitleSection from "../TitleSection/TitleSection"
 const TestimonialsSection = () => {
     let persons=[{
@@ -39,8 +40,16 @@ const TestimonialsSection = () => {
                     description={person?.description} />
                 })}
                 </TestimonialsContainer>
+               
                 
         </section>
     )
 }
 export default TestimonialsSection
+/*  <AwardsContainer>
+                    {persons?.map((person,index)=>{
+                    return <TestimonialCard key={index} image={person?.image}
+                    name={person?.name}
+                    description={person?.description} />
+                })}
+                </AwardsContainer> */

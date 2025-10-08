@@ -1,0 +1,49 @@
+.card{
+    padding: 50px;
+}
+.top_card{
+
+    margin-bottom: 30px;
+    gap: 20px;
+}
+.left_image{
+    gap: 16px;
+}
+.title{
+    margin-bottom: 20px;
+}
+.bottom_card{
+    background-color: var(--background-color-primary);
+    border-radius: 10px;
+    padding: 30px;
+}
+@media screen and (max-width:1440px) {
+    .card{
+        padding: 40px;
+        box-shadow: 4px 4px 0px 1px var(--color-shift-secondary);
+    }
+    .top_card{
+        padding: 24px;
+        margin-bottom: 24px;   
+    }
+    .left_image{
+        gap: 12px;
+    }
+    .title{
+        margin-bottom: 16px;
+    } 
+}
+@media screen and (max-width:992px) {
+    .card{
+        padding: 30px;
+    }
+    .top_card{
+        padding: 20px;
+    }
+    .left_image{
+        gap: 10px;
+    }
+    .title{
+        margin-bottom: 12px;
+    }
+}

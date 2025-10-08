@@ -8,7 +8,7 @@ const NavBar = ({image,items}) => {
     setShow(!show)
   }
   return (
-    <nav className={`${styles.nav} white_spacing`}>
+    <nav className={styles.nav}>
         <NavTop/>
         <div className={styles.nav_bottom}>
             {/* <div className={styles.left}>
@@ -24,7 +24,7 @@ const NavBar = ({image,items}) => {
             <div className={`${styles.nav_items} ${show ? styles.show : ""}`}>
               <ul>
               {items.map((item,index)=>{
-                return <li key={index}><NavLink to={item?.url}>{item?.content}</NavLink></li>
+                return <li key={index}><NavLink to={item?.url} className={({isActive})=>isActive && "active"}>{item?.content}</NavLink></li>
             })}
             </ul>
             </div>

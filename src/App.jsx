@@ -1,10 +1,15 @@
+import { Route, Routes } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
-import Home from "./Pages/Home/Home"
+import About from "./Pages/About"
+import Academy from "./Pages/Academy"
+import Home from "./Pages/Home"
+import Footer from "./components/Footer/Footer"
+import AcademyPart from "./Pages/AcademyPart/AcademyPart"
 
 function App() {
-  let navItems=[{url:"/home",content:"Home"},
+  let navItems=[{url:"/",content:"Home"},
     {url:"/about",content:"About Us"},
-    {url:"/academics",content:"Academics"},
+    {url:"/academy",content:"Academics"},
     {url:"/admissions",content:"Admessions"},
     {url:"/studentlife",content:"Student Life"},
     {url:"/contact",content:"Contact"}
@@ -17,7 +22,15 @@ function App() {
       title="Little Learners"
       items={navItems}
       />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/academy" element={<Academy/>}>
+          <Route path=":name" element={<AcademyPart/>}/>
+        </Route>
+      </Routes>
+      <Footer/>
+
     </>
   )
 }
