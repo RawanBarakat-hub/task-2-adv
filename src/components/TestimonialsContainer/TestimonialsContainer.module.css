@@ -7,10 +7,8 @@
 }
 .sliderWrapper {
   overflow: hidden;
-/*   width: 88%; */
   margin: 0 auto;
   padding: 40px 0;
- /*  width: fit-content; */
   width: calc(22.94*3vw + 6vw);
 
 }
@@ -19,7 +17,6 @@
   gap: 3vw; 
   transition: transform 0.8s ease-in-out;
   will-change: transform;
-  /* justify-content: center; */
   width: calc(22.94*3vw + 6vw);
   margin: 0 auto;
 }
@@ -46,7 +43,6 @@
   cursor: pointer;
 }
 
-/* موبايل */
 @media screen and (max-width: 992px) {
   .slider {
     gap: 20px;

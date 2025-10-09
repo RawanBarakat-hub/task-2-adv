@@ -1,22 +1,4 @@
-/* import styles from "./Gallery.module.css"
-import Arrows from "../Arrows/Arrows"
 
-const Gallery = ({images,title,description,style}) => {
-    return (
-        <div className={`${styles.gallery} card_style`}>
-                <div className={styles.images_wrapper}>
-                    {
-                    images?.map((image,index)=>{
-                        return <div style={style} className={styles.image}><img className={styles.photo} key={index} src={image} alt="gallery photo"/></div>
-                    })
-                    }
-                </div>
-            <Arrows title={title} description={description} />
-        </div>
-    )
-}
-
-export default Gallery */
 import { useState, useRef, useEffect } from "react";
 import styles from "./Gallery.module.css";
 import Arrows from "../Arrows/Arrows";
@@ -28,7 +10,6 @@ const Gallery = ({ images, title, description }) => {
   );
   const sliderRef = useRef(null);
 
-  // ✅ استماع لتغير حجم الشاشة
   useEffect(() => {
     const handleResize = () => {
       setVisibleCount(window.innerWidth <= 992 ? 1 : 4);
@@ -47,7 +28,6 @@ const Gallery = ({ images, title, description }) => {
     setCurrent((prev) => (prev <= 0 ? total - visibleCount : prev - 1));
   };
 
-  // ✅ التحريك الفعلي
   useEffect(() => {
     if (!sliderRef.current) return;
     const cards = sliderRef.current.children;

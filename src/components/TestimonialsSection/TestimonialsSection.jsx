@@ -46,10 +46,3 @@ const TestimonialsSection = () => {
     )
 }
 export default TestimonialsSection
-/*  <AwardsContainer>
-                    {persons?.map((person,index)=>{
-                    return <TestimonialCard key={index} image={person?.image}
-                    name={person?.name}
-                    description={person?.description} />
-                })}
-                </AwardsContainer> */
