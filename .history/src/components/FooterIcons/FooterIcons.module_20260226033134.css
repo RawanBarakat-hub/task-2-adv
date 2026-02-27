@@ -1,0 +1,22 @@
+.list{
+    list-style: none;
+}
+.list li{
+    margin-bottom: 24px;
+}
+.list a{
+    text-decoration: none; 
+    gap: 8px;
+} 
+.info{
+    color: var(--color-shift);
+    font-family: "outfit5";
+    font-size: 20px;
+}
+
+@media screen and (max-width:1440px) {
+    .info{
+        gap: 8px;
+        font-size: 16px;
+    }
+}}

@@ -1,0 +1,35 @@
+.list{
+    list-style: none;
+}
+.list li{
+    margin-bottom: 8px;
+}
+.list a{
+    text-decoration: none; 
+} 
+.info{
+    color: var(--color-shift);
+    font-family: "outfit5";
+    font-size: 20px;
+    width: fit-content;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+.image{
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-color-primary);
+}
+@media screen and (max-width:1440px) {
+    .info{
+        gap: 8px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:992px) {
+    .image{
+        width: 32px;
+        height: 32px;
+    }
+}

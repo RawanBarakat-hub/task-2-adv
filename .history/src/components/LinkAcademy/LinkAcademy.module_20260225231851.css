@@ -1,0 +1,25 @@
+.link{
+    background-color: var(--background-color-light);
+    padding: 10px 20px;
+    font-family: "outfit6";
+    font-size: 20px;
+    color: var(--color-shift-rarely);
+    width: fit-content;
+    text-decoration: none;
+    margin: 15px;
+    cursor: pointer;
+}
+.link.active
+@media screen and (max-width:1440px) {
+    .link{
+        padding: 8px 14px;
+        font-size: 16px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:992px) {
+    .link{
+        margin: 10px auto;
+        display: block;
+    }
+}

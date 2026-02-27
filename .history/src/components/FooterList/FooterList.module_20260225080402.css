@@ -1,0 +1,18 @@
+.footer_list .t{
+    font-family: "outfit6";
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: var(--color-shift);
+}
+.footer_list li{
+    margin-bottom: 14px;
+}
+.footer_list a{
+    text-decoration: none;
+    font-family: "outfit5";
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: var(--color-shift-rarely);
+}
+@media  screen and (max-width:992px) {
+}

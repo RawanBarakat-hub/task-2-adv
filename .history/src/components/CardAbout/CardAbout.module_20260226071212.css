@@ -1,0 +1,75 @@
+.card{
+    padding: 80px 50px;
+    border: 2px solid var(--color-shift);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px var(--color-shadow-secondary);
+    position: relative;
+    margin-bottom: 50px;
+    bottom: 0;
+    transition: 0.5s all;
+    flex: 0 0 calc((99% - (2 * 2vw)) / 3);
+}
+.card.about{
+    flex: 0 0 30%;
+
+}
+.card .image{
+    width: 74px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: var(--primary-color);
+    border: 2px solid var(--color-shift);
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+.card h2{
+    font-family: "raleway7";
+    font-size: 28px;
+    color: var(--color-shift-secondary);
+}
+.card p{
+    font-family: "outfit5";
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--paragraph-color);
+    margin-top: 20px;
+}
+.card{
+    flex-shrink: 0;
+}
+@media screen and (max-width:1440px) {
+    .card{
+        padding: 60px 40px;
+        box-shadow: 4px 4px 0px 2px #1E1E1E;
+        margin-bottom: 40px;
+    }
+    .card .image{
+        width: 56px;
+        height: 56px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .card h2{
+        font-size: 24px;
+    }
+    .card p{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width:992px) {
+    .card{
+        flex: 0 0 99%;
+        padding: 50px 30px;
+        box-shadow: 4px 4px 0px 1px #1E1E1E;
+    }
+    .card h2{
+        font-size: 22px;
+    }
+}

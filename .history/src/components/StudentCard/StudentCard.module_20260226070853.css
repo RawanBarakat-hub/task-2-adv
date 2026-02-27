@@ -1,0 +1,35 @@
+.card{
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    z-index: 0;
+    width: 30%;
+}
+.image_wrapper{
+    width: max-content;
+    width: 100%;
+}
+.image{
+    max-width: 100%;
+}
+.title{
+    margin: 50px 0 20px;
+}
+@media screen and (max-width:1440px) {
+    .card{
+        padding: 40px;
+    }
+    .title{
+        margin: 40px 0 14px;
+    }
+}
+@media screen and (max-width:992px) {
+    .card{
+        padding: 30px;
+        width: 100%;
+    }
+    .background{
+        width: 93px;
+        /* height: 237px; */
+    }
+}

@@ -1,0 +1,14 @@
+.links_container{
+    margin: 0 auto 300px;
+    width: fit-content;
+}
+@media screen and (max-width:1440px) {
+    .links_container{
+        margin-bottom: 240px;
+    }
+}
+@media screen and (max-width:992px) {
+    .links_container{
+        margin-bottom: 160px;
+    }
+}

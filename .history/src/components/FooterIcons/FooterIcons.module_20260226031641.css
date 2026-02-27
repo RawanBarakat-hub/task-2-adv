@@ -1,0 +1,31 @@
+.list{
+    list-style: none;
+}
+
+.info_link{
+    text-decoration: none;
+    color: var(--color-shift);
+    font-family: "outfit5";
+    font-size: 20px;
+    width: fit-content;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+.image{
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-color-primary);
+}
+@media screen and (max-width:1440px) {
+    .icon a{
+        gap: 8px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:992px) {
+    .image{
+        width: 32px;
+        height: 32px;
+    }
+}

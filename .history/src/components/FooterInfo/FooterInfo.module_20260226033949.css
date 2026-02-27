@@ -1,0 +1,20 @@
+.info a{
+    font-family: "outfit5";
+    font-size: 18px;
+    color: var(--color-shift-rarely);
+    padding: 0 16px;
+    t
+}
+.info a:first-child{
+    padding-left: 0;
+}
+.info a:nth-child(2){
+    border: 2px solid var(--color-shift);
+    border-width: 0 2px;
+}
+@media screen and (max-width:992px) {
+    .info a{
+        font-size: 14px;
+        padding: 0 6px;
+    }
+}

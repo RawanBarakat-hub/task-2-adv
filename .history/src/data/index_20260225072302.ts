@@ -1,0 +1,227 @@
+export let navItems=[{url:"/",content:"Home"},
+    {url:"/about",content:"About Us"},
+    {url:"/academy",content:"Academics"},
+    {url:"/admissions",content:"Admessions"},
+    {url:"/studentlife",content:"Student Life"},
+    {url:"/contact",content:"Contact"}
+]
+export let cardsAbout=[
+        {
+            image:{content:"/assets/img/icons/graduation.svg",
+            alternative:"graduation logo"},
+            title:"Holistic Learning Approach",
+            description:"Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education."
+        },
+        {
+            image:{content:"/assets/img/icons/crown.svg",
+            alternative:"crown logo"},
+            title:"Experienced Educators",
+            description:"Our passionate and qualified teachers create a supportive and stimulating learning environment."
+        },
+        {
+            image:{content:"/assets/img/icons/coffe.svg",alternative:"coffe logo"},
+            title:"Nurturing Environment",
+            description:"We prioritize safety and provide a warm and caring atmosphere for every child."
+        },
+        {
+            image:{content:"/assets/img/icons/flag.svg",alternative:"flag logo"},
+            title:"Play-Based Learning",
+            description:"We believe in the power of play to foster creativity, problem-solving skills, and imagination."
+        },
+        {
+            image:{content:"/assets/img/icons/ball.svg",alternative:"ball logo"},
+            title:"Individualized Attention",
+            description:"Our small class sizes enable personalized attention, catering to each child's unique needs."
+        },
+        {
+            image:{content:"/assets/img/icons/person.svg",alternative:"person logo"},
+            title:"Parent Involvement",
+            description:"We foster a strong parent-school partnership to ensure seamless communication and collaboration."
+        }
+    ]
+export let awards=[
+        {
+            image:{content:"/assets/img/icons/fragment.svg",alternative:"fragment icon"},
+            title:"Outstanding Early Childhood Education Awar",
+            description:"Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment."
+        },
+        {
+            image:{content:"/assets/img/icons/statistics.svg",alternative:"statistics icon"},
+            title:"Innovative STEAM Education Award",
+            description:"Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners."
+        },
+        {
+            image:{content:"/assets/img/icons/symbol.svg",alternative:"symbol icon"},
+            title:"Environmental Stewardship Award",
+            description:"Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students."
+        },
+        {
+            image:{content:"/assets/img/icons/graduation.svg",alternative:"fragment icon"},
+            title:"Outstanding Early Childhood Education Awar",
+            description:"Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment."
+        },
+        {
+            image:{content:"/assets/img/icons/crown.svg",alternative:"statistics icon"},
+            title:"Innovative STEAM Education Award",
+            description:"Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners."
+        },
+        {
+            image:{content:"/assets/img/icons/flag.svg",alternative:"symbol icon"},
+            title:"Environmental Stewardship Award",
+            description:"Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students."
+        },
+        {
+            image:{content:"/assets/img/icons/person.svg",alternative:"fragment icon"},
+            title:"Outstanding Early Childhood Education Awar",
+            description:"Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment."
+        },
+        {
+            image:{content:"/assets/img/icons/coffe.svg",alternative:"statistics icon"},
+            title:"Innovative STEAM Education Award",
+            description:"Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners."
+        }
+    ]
+export let cards=[{
+        image:{
+            content:"/assets/img/icons/book.svg",
+            alternative:"Book photo"
+        },
+        title:"Thematic Learning",
+        description:"Our curriculum is centered around engaging themes that capture children's imaginations. Each theme integrates multiple subjects, making learning enjoyable and relevant."
+    },
+    {
+        image:{
+            content:"/assets/img/icons/statistics.svg",
+            alternative:"Statistics photo"
+        },
+        title:"STEAM Education",
+        description:"We offer innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that promote hands-on exploration, critical thinking, and problem-solving skills."
+    },
+    {
+        image:{
+            content:"/assets/img/icons/puzzle.svg",
+            alternative:"Puzzle photo"
+        },
+        title:"Language Immersion",
+        description:"Through language immersion programs, children have the opportunity to learn a second language, enhancing cognitive development and global awareness."
+    },
+    {
+        image:{
+            content:"/assets/img/icons/pen.svg",
+            alternative:"Pen photo"
+        },
+        title:"Art and Creativity",
+        description:"Art is celebrated at Little Learners Academy. Our art-focused activities encourage self-expression, creativity, and the appreciation of various art forms."
+    },
+    {
+        image:{
+            content:"/assets/img/icons/sun.svg",
+            alternative:"Sun photo"
+        },
+        title:"Outdoor Education",
+        description:"Our expansive outdoor learning spaces provide a stimulating environment for children to explore nature, fostering a connection with the environment."
+    },{
+        image:{
+            content:"/assets/img/icons/star2.svg",
+            alternative:"Star photo"
+        },
+        title:"Play-Based Learning",
+        description:"Play is an integral part of early childhood education. Our play-based approach enhances social skills, emotional development, and imaginative thinking."
+    }]
+export let dates=[2023,2017,2012,2005,2000]
+export let information=[
+        {
+            title:"Resilience and Future Horizons",
+            description:"Adapting to new challenges, we remained committed to our mission of providing an exceptional early education. Looking ahead with optimism, we envision a future filled with boundless possibilities as we continue shaping the leaders and thinkers of tomorrow."},
+        {
+            title:"Innovation and Technology",
+            description:"Innovation became the driving force behind our kindergarten's progress from 2016 to 2020. Embracing the latest educational technologies, we crafted engaging and interactive learning experiences for our students."},
+        {
+            title:"Expansion and Recognition",
+            description:"These years marked as a period of expansion and recognition for our school. As we extended our facilities and enhanced our curriculum, we received accolades for our commitment to quality education and innovative teaching methodologies."
+        },
+        {
+            title:"Inception and Growth",
+            description:"Established in 2005, our kindergarten school began its journey with a vision to provide a nurturing space for young minds to explore, learn, and grow. Over the next five years, we witnessed significant growth."
+        },
+        {
+            title:"Inception and Growth",
+            description:"Established in 2005, our kindergarten school began its journey with a vision to provide a nurturing space for young minds to explore, learn, and grow. Over the next five years, we witnessed significant growth."
+        }
+    ]        
+export let infoFooter=[{
+        title:"Home",
+        items:[
+        {url:"/",
+        content:"Features"
+        },
+        {url:"/",
+        content:"Our Testimonials"
+        },
+        {
+        url:"/",
+        content:"FAQ"
+        }]
+    },{
+        title:"About Us",
+        items:[
+            {   url:"/",
+                content:"Our Mission"
+            },
+            {
+                url:"/",
+                content:"Our Vission"
+            },
+            {
+                url:"/",
+                content:"Awards and Recognitions"
+            },
+            {
+                url:"/",
+                content:"History"
+            },
+            {
+                url:"/",
+                content:"Teachers"
+            }
+        ]
+    },{
+        title:"Academics",
+        items:[
+        {
+            url:"/",
+            content:"Special Features"
+        },
+        {
+            url:"/",
+            content:"Gallery"
+        }]
+    },
+    {
+        title:"Contact Us",
+        items:[
+        {
+            url:"/",
+            content:"Information"
+        },
+        {
+            url:"/",
+            content:"Map & Direction"
+        }]
+    }]
+export  let icons=[{url:"https://www.facebook.com",
+        image:{source:"/assets/img/icons/facebook.svg",
+            alternative:"facebook icon"}},
+        {
+            url:"https://www.x.com",
+            image:{source:"/assets/img/icons/x.svg",
+                alternative:"x icon"
+            }
+        },
+        {
+            url:"https://www.linkedin.com",
+            image:{
+                source:"/assets/img/icons/linkedin.svg",
+                alternative:"linkedin icon"
+            }
+        }]

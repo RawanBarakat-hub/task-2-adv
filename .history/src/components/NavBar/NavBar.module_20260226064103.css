@@ -1,0 +1,121 @@
+.nav{
+    padding-top: 18px;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 102px);
+    z-index: 10;
+}
+.nav_bottom{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--background-color-light);
+    margin-top: 14px;
+    border: 2px solid var(--color-shift);
+    border-radius: 12px;
+    overflow: hidden;
+    height: 80px;
+    .first_image{
+        height: 100%;
+        border-right: 2px solid var(--color-shift);
+        background-color: var(--rarely-color);
+        padding: 20px 24px;
+    }
+}
+.nav_bottom .list_nav{
+    display: flex;
+    height: 100%;
+    list-style: none;
+    flex-shrink: 1;
+}
+.nav_bottom .list_nav li{
+    border-left: 2px solid var(--color-shift);
+    border-top-width: 0;
+    border-bottom-width: 0;
+    transition: 0.3s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.nav_bottom .list_nav li a{
+    padding: 25px 34px;
+}
+.nav_bottom .list_nav li:hover{
+    background-color: var(--accent-color);
+}
+.nav_bottom .list_nav a{
+    text-decoration: none;
+    font-family: "outfit5";
+    font-size: 20px;
+    color: var(--color-shift);
+}
+.nav_bottom button{
+    background: none;
+    border: none;
+    border-left: 2px solid var(--color-shift);
+    height: 100%;
+    padding: 0 30px;
+    background-color: var(--secondary-color);
+    display: none;
+}
+.nav_items{
+    position: absolute;
+    top: -220%;
+    right: -100%;
+    transition: 0.3s all;
+    border: 2px solid var(--color-shift);
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    width: 200px;
+}
+.nav_items ul{
+    list-style: none;
+}
+.nav_items li{
+/*     padding: 20px; */
+    border-bottom: 2px solid var(--color-shift);
+}
+.nav_items a{
+    text-decoration: none;
+    color: var(--color-shift);
+}
+.active{
+    background-color: var(--secondary-color);
+}
+.nav_items.show{
+    transform: translateX(100%);
+    right: 220px;
+}
+@media screen and (max-width:1440px) {
+    .nav{
+        padding-top: 16px;
+    }
+    .nav_bottom{
+        height: 66px;
+        .first_image{
+            height: 100%;
+            padding: 16px 20px;
+            max-width: 155.29px;
+        }
+    }
+    .nav_bottom .list_nav li a{
+        font-size: 16px;
+        padding: 25px 24px;
+    }
+}
+@media screen and (max-width:992px) {
+    .nav{
+        padding-top: 40px;
+        width: calc(100% - 34px);
+    }
+    .nav_bottom{
+        height: 62px;
+    }
+    .nav_bottom .list_nav{
+        display: none;
+    }
+    .nav_bottom button{
+        display: block;
+    }
+}
